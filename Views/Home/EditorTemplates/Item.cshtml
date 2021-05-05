@@ -1,0 +1,6 @@
+﻿@model HtmlHelperIssue.Models.Item
+
+<tr>
+    <td>@Model.Id</td>
+    <td><input type="text" name="@Html.NameFor(m=>m.Id)" value="@Html.ValueFor(item => item.Id)" /></td>
+</tr>
