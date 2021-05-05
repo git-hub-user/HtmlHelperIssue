@@ -1,0 +1,16 @@
+﻿@model HtmlHelperIssue.Models.MyModel
+    <h1>Step A</h1>
+    <form method="post">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id by property</th>
+                    <th>Id by value for</th>
+                </tr>
+            </thead>
+            <tbody>
+                @Html.EditorFor(m => m.Items)
+            </tbody>
+        </table>
+        <input type="submit" value="Submit" />
+    </form>
